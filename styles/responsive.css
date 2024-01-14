@@ -1,0 +1,138 @@
+/* mobile view */
+
+@media screen and (max-width: 576px) {
+
+    /* header section responsive area */
+    header{
+        margin: 30px 0 30PX 20px;
+    }
+    nav {
+        flex-direction: column;
+    }
+
+    nav>ul {
+        margin-top: 10px;
+    }
+
+    nav>ul li {
+        margin-right: 20px;
+    }
+
+    .logo h2 {
+        font-size: 0.9rem;
+    }
+
+    .banner {
+        width: 100%;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .text-content {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .img-content {
+        width: 80%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* design for banner logo */
+
+    .banner-logo{
+        margin-top: 3.5rem;
+    }
+    .banner-logo img{
+        margin: 12px;
+    }
+    .grid-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    /* popular collection responsive */
+
+    .popular-collection{
+        margin: 50px 55px;
+        
+    }
+
+    .grid-item-1{
+        margin: 0 auto;
+    }
+    /* feature section responsive */
+
+    .feature{
+        flex-direction: column-reverse;
+        margin: 50px 55px;
+    }
+    .feature .text-container{
+        width: 100%;
+        margin-bottom: 30px;
+
+    }
+    .feature .img-container{
+        width: 100%;
+    }
+}
+/* design for medium screen and tablet */
+
+@media screen and (min-width: 577px) and (max-width: 915px){
+
+    /* header section responsive area */
+    header{
+        margin: 30px 100px;
+    }
+    nav {
+        flex-direction: column;
+    }
+    nav>ul {
+        margin-top: 10px;
+    }
+    .banner {
+        width: 100%;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+    .text-content {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .img-content {
+        width: 60%;
+        justify-content: center;
+        align-items: center;
+    }
+    .banner-logo img{
+        margin: 15px;
+    }
+
+    /* popular collection responsive */
+    .popular-collection{
+        margin: 50px 100px;
+    }
+
+    .grid-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 15px;
+
+    }
+    .feature{
+        margin: 50px 100px;
+    }
+    
+}
+@media screen and (min-width: 916px) and (max-width: 1215px){
+    .popular-collection{
+        margin: 50px 100px;
+    }
+}
